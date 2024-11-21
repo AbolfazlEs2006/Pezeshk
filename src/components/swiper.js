@@ -19,22 +19,22 @@ export default function App() {
     
       <Swiper
         slidesPerView={4}
-        spaceBetween={30}
+        spaceBetween={10}
         // pagination={{
           //   clickable: true,
           // }}
           modules={[Pagination]}
           className="mySwiper mt-3"
           >
-        <SwiperSlide>لیزر پوست</SwiperSlide>
+        <SwiperSlide><> لیزر پوست</></SwiperSlide>
         <SwiperSlide>ماسک صورت</SwiperSlide>
         <SwiperSlide>دندان پزشکی</SwiperSlide>
         <SwiperSlide>ایمپلنت دندان</SwiperSlide>
         <SwiperSlide>درمان آراتروز</SwiperSlide>
         <SwiperSlide>اورتوپد</SwiperSlide>
         <SwiperSlide>تزریق ژل</SwiperSlide>
-        <SwiperSlide>پاکسازی صورت</SwiperSlide>
-        <SwiperSlide>جوان سازی پوست</SwiperSlide>
+        <SwiperSlide>پاکسازی </SwiperSlide>
+        <SwiperSlide>جوان سازی </SwiperSlide>
       </Swiper>
         </Container>
     </>

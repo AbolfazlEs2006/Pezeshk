@@ -7,6 +7,7 @@ import Doctor from './components/Doctor'
 import Product from './components/Product'
 import Send from './components/Send'
 import Specifications from './components/Specifications'
+import Footer from './components/Footer'
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
     <Product />
     <Send />
     <Specifications />
+    <Footer />
     </>
   )
 }

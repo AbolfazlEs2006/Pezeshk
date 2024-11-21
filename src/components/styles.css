@@ -6,3 +6,6 @@
 .sw-container {
     width: 70% !important;
 }
+.swiper-slide {
+    font-weight: bold;
+}
