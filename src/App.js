@@ -1,9 +1,7 @@
 import React from 'react'
-import SubHeader from './components/SubHeader'
-import Main from './components/Main'
-import Services from './components/Services'
-import Header from './components/Header'
 import './App.css'
+import {Routes, Route} from 'react-router-dom'
+import Home from './Home'
 // import Main from './components/Main'
 // import Services from './components/Services'
 // import { Routes, Route } from "react-router-dom";
@@ -12,10 +10,9 @@ import './App.css'
 function App() {
   return (
     <>
-      <Header />
-      <SubHeader />
-      <Main />
-      <Services />
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+    </Routes>
     </>
   );
 }

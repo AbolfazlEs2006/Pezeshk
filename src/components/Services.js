@@ -10,9 +10,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/bundle';
 
 import './Services.css';
-
-import Home from './Home';
-
 // import required modules
 import { Pagination } from 'swiper/modules';
 
@@ -20,7 +17,6 @@ export default function App() {
 
   return (
     <>
-    <Home />
     <Container>
       <Swiper
         slidesPerView={1}

@@ -1,0 +1,27 @@
+.specifications {
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    padding: 1.3rem;
+    color: #0052a8;
+    text-align: center;
+}
+.specifications div svg {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.specifications div h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+}
+.specifications div h4 {
+    color: gray;
+    font-size: 1rem;
+    margin-top: 1.7rem;
+}
+.specifications-dis {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
