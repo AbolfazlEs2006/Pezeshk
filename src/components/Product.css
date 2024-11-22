@@ -1,49 +1,60 @@
-.Product-swip {
-    display: flex;
-    width: 20% !important;
-    height: 310px !important;
-    text-align: center;
-    border: 1px solid rgb(199, 199, 199);
-    padding: 1rem;
-    border-radius: 10px;
-    transition-duration: 0.5s;
-    border-bottom: none;
-}
-.Product-swip a {
-    text-decoration: none;
-}
-.Product-swip div div div {
-    text-align: start;
-}
-.Product-swip:hover {
-    background-color: rgb(234, 234, 234);
+@media screen and (min-width: 360px) {
+    .Product-swip {
+        display: flex;
+        width: 30% !important;
+        height: 350px !important;
+        text-align: center;
+        border: 1px solid rgb(199, 199, 199);
+        padding: 1rem;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+        border-bottom: none;
+    }
+    .Product-swip a {
+        text-decoration: none;
+    }
+    .Product-swip div div div {
+        text-align: start;
+    }
+    .Product-swip:hover {
+        background-color: rgb(234, 234, 234);
+        .add-product button {
+            background-color: #0052a8;
+        }
+    }
+    .Product-swip div div div h1 {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    .add-product {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        padding: 0 0.5rem;
+    }
+    .Product-swip div div img {
+        width: 40%;
+        margin-top: 1rem;
+    }
+    .product-dis {
+        display: flex;
+    }
     .add-product button {
-        background-color: #0052a8;
+        background-color: rgb(187, 187, 187);
+        padding: 0.5rem;
+        border-radius: 10px;
+        border: none;
+    }
+    .add-product svg {
+        color: white;
+    }
+    .swiper-product {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
-.Product-swip div div div h1 {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
-.add-product {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    padding: 0 0.5rem;
-}
-.Product-swip div div img {
-    width: 40%;
-    margin-top: 1rem;
-}
-.product-dis {
-    display: flex;
-}
-.add-product button {
-    background-color: rgb(187, 187, 187);
-    padding: 0.5rem;
-    border-radius: 10px;
-    border: none;
-}
-.add-product svg {
-    color: white;
+@media screen and (min-width: 990px) {
+    .Product-swip {
+        width: 25% !important;
+    }
 }

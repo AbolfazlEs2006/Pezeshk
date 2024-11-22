@@ -13,7 +13,7 @@ export default function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Brand href="/" className='Nav-logo'><img src='./img/logo.png' /></Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className=" Nav-sm">
+          <Nav className="Nav-sm">
             <Link to={'/'}>صفحه اصلی</Link>
             <Link to={'/services'}>خدمات</Link>
             <Link to={'/product'}>فروشگاه</Link>

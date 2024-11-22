@@ -8,6 +8,8 @@ import Product from './components/Product'
 import Send from './components/Send'
 import Specifications from './components/Specifications'
 import Footer from './components/Footer'
+import Title from './components/title'
+import { Margin } from '@mui/icons-material'
 
 
 export default function Home() {
@@ -16,10 +18,14 @@ export default function Home() {
     <Header />
     <SubHeader />
     <Main />
+    <Title title='خدمات پزشکیار'/>
     <Services />
+    <Title title='متخصصین پزشکیار' />
     <Doctor />
+    <Title title='محصولات ما' link='product'/>
     <Product />
     <Send />
+    <Title title='روش های کار پزشکیار' />
     <Specifications />
     <Footer />
     </>

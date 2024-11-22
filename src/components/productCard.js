@@ -21,12 +21,12 @@ export default function Product() {
         <Container>
       <Swiper
         slidesPerView={3}
-        spaceBetween={70}
+        spaceBetween={60}
         pagination={{
             clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper mt-5 mb-5 Services-swiper"
+        className="mySwiper mt-3 mb-5 Services-swiper swiper-product"
         >
         <SwiperSlide className='Product-swip'>
             <Link to={'/product'}>

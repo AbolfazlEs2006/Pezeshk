@@ -14,11 +14,13 @@ export default function Main() {
     <>
     <Container className="main-container">
         <div className="doctor-main">
-            <img src="./img/doctor.png" alt="Doctor"/>
             <div>
                 <h1>اراءه خدمات پزشکی در خانه</h1>
                 <p>متخصصین پزشکیار در 24 ساعت شبانه روز در اراءه خدمات آماده هستند</p>
                 <Button>بیشتر بدانید</Button>
+            </div>
+            <div>
+            <img src="./img/doctor.png" alt="Doctor"/>
             </div>
         </div>
         <div className="Product-main">
