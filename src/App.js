@@ -1,15 +1,17 @@
 import React from 'react'
 import './App.css'
-import { useRoutes } from 'react-router-dom'
-import routes from './routes'
-
+import Home from './Home'
+import Mainproduct from './components/Mainproduct'
+import { Routes, Route } from 'react-router-dom'
 function App() {
 
-  let router = useRoutes(routes)
 
   return (
     <>
-      {router}
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/product' element={<Mainproduct />} />
+    </Routes>
     </>
   );
 }
