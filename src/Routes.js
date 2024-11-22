@@ -1,7 +1,9 @@
 import Home from "./Home"
+import Mainproduct from "./components/Mainproduct"
 
-const router = [
-    {path: '/' , Element: <Home />}
+let router = [
+    {path: '/' , element: <Home />},
+    {path: '/product', element: <Mainproduct />}
 ]
 
 export default router
