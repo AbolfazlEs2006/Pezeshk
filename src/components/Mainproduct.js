@@ -1,16 +1,14 @@
 import React from 'react'
 import Header from './Header'
-import { Link } from 'react-router-dom'
-import Allproduct from './Allproduct'
-import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStoreOutlined';
 import './Product.css'
-import Product from './ProductCard';
+import Allproduct from './Allproduct'
+import { Link } from 'react-router-dom'
 
 export default function Mainproduct() {
   return (
     <>
         <Header />
-        {/* <div className='Allproduct-card'>
+        <div className='Allproduct-card'>
         {Allproduct.map(product => (
           <Link to={`/product/${product.id}`}>
                     <div>
@@ -23,15 +21,13 @@ export default function Mainproduct() {
                         </div>
                         <div className='add-product'>
                         <button>
-                            <LocalGroceryStoreOutlinedIcon />
                             </button>
                             <h4>{product.price}</h4>
                         </div>
                     </div>
                     </Link>
         ))}
-        </div> */}
-        <Product />
+        </div>
     </>
   )
 }
