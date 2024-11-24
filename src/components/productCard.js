@@ -8,6 +8,7 @@ import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStore
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/bundle';
+import Allproduct from './Allproduct';
 
 import { Link } from 'react-router-dom';
 
@@ -28,83 +29,27 @@ export default function Product() {
         modules={[Pagination]}
         className="mySwiper mt-3 mb-5 Services-swiper swiper-product"
         >
-        <SwiperSlide className='Product-swip'>
-            <Link to={'/product'}>
-            <div>
-                <div>
-                        <img src='./img/tabsanj-1.png' />
+            {Allproduct.map(product => (
+                <SwiperSlide className='Product-swip' key={product.id}>
+                    <Link to={`/product/${product.id}`}>
                     <div>
-                        <h1>برس پاک سازی میوتو</h1>
-                        <p>دماسنج | تب سنج</p>
+                        <div>
+                                <img src={product.img} />
+                            <div>
+                                <h1>{product.title}</h1>
+                                <p>{product.des}</p>
+                            </div>
+                        </div>
+                        <div className='add-product'>
+                        <button>
+                            <LocalGroceryStoreOutlinedIcon />
+                            </button>
+                            <h4>{product.price}</h4>
+                        </div>
                     </div>
-                </div>
-                <div className='add-product'>
-                <button>
-                    <LocalGroceryStoreOutlinedIcon />
-                    </button>
-                    <h4>700,00</h4>
-                </div>
-            </div>
-            </Link>
-        </SwiperSlide>
-        <SwiperSlide className='Product-swip'>
-            <Link to={'/product'}>
-            <div>
-                <div>
-                        <img src='./img/bokhor-2.png' />
-                    <div>
-                        <h1>دستگاه بخور و رطوبت ساز</h1>
-                        <p>محصولات پوستی | تب سنج</p>
-                    </div>
-                </div>
-                <div className='add-product'>
-                <button>
-                    <LocalGroceryStoreOutlinedIcon />
-                    </button>
-                    <h4>2,600,000</h4>
-                </div>
-            </div>
-            </Link>
-        </SwiperSlide>
-        <SwiperSlide className='Product-swip'>
-            <Link to={'/product'}>
-            <div>
-                <div>
-                        <img src='./img/bokhor-3.png' />
-                    <div>
-                        <h1>دستگاه بخور سرد امسیگ</h1>
-                        <p>محصولات پوستی</p>
-                    </div>
-                </div>
-                <div className='add-product'>
-                <button>
-                    <LocalGroceryStoreOutlinedIcon />
-                    </button>
-                    <h4>2,500,000</h4>
-                </div>
-            </div>
-            </Link>
-        </SwiperSlide>
-        <SwiperSlide className='Product-swip'>
-            <Link to={'/product'}>
-            <div>
-                <div>
-                        <img src='./img/hava-1.png' />
-                    <div>
-                        <h1>دستگاه بخور سرد و گرم درما</h1>
-                        <p> تب سنج</p>
-                    </div>
-                </div>
-                <div className='add-product'>
-                    <button>
-                    <LocalGroceryStoreOutlinedIcon />
-                    </button>
-                    <h4>6,000,000</h4>
-                </div>
-            </div>
-            </Link>
-        </SwiperSlide>
-
+                    </Link>
+                </SwiperSlide>
+            ))}
       </Swiper>
     </Container></>
   )

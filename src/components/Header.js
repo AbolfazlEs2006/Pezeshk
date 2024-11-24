@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <>
-        <Navbar expand="lg">
+    <Navbar expand="lg">
       <Container style={{justifyContent: 'space-between', width: '100%'}}>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Brand href="/" className='Nav-logo'><img src='./img/logo.png' /></Navbar.Brand>
+        <Navbar.Brand href="/" className='Nav-logo'><img src='../img/logo.png' /></Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="Nav-sm">
             <Link to={'/'}>صفحه اصلی</Link>
@@ -21,8 +21,10 @@ export default function Header() {
           </Nav>
         </Navbar.Collapse>
         <div className='Nav'>
-            <button className='btn-reserve'><span> درخواست نوبت <i><CottageOutlinedIcon /></i></span></button>
-        <button className='btn-person'><i><PersonOutlineOutlinedIcon /></i></button>
+        <button className='btn-reserve'><span> درخواست نوبت <i><CottageOutlinedIcon /></i></span></button>
+        <Link to='/Myaccount'>
+          <button className='btn-person'><i><PersonOutlineOutlinedIcon /></i></button>
+        </Link>
         <button className='btn-add-product'><i><ProductionQuantityLimitsOutlinedIcon /></i></button>
             </div>
       </Container>
