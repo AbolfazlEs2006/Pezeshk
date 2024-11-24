@@ -61,7 +61,7 @@ export default function Aboutproduct() {
           </div>
         </div>
         <div className='about-product-img'>
-          <img src={mainproduct[0].imgg} />
+          <img src={mainproduct[0].imgg} alt={mainproduct[0].title}/>
         </div>
       </div>
     </Container>

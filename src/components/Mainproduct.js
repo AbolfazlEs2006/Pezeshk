@@ -13,7 +13,7 @@ export default function Mainproduct() {
           <Link to={`/product/${product.id}`}>
                     <div>
                         <div>
-                                <img src={product.imgg} />
+                                <img src={product.imgg} alt={product.title}/>
                             <div>
                                 <h1>{product.title}</h1>
                                 <p>{product.des}</p>
