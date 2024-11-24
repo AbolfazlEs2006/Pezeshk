@@ -5,7 +5,7 @@ import './Specifications.css'
 export default function Specificationscard(props) {
   return (
     <>
-        <div className='specifications'>
+        <div className='Specifications'>
             <div>
                 <LocalShippingOutlinedIcon />
             </div>

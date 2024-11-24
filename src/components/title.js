@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import { Link } from 'react-router-dom';
 
-export default function title(props) {
+export default function Title(props) {
   return (
     <Container>
         <>
