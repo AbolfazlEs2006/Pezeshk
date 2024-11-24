@@ -4,7 +4,7 @@ import Home from './Home'
 import Mainproduct from './components/Mainproduct'
 import { Routes, Route } from 'react-router-dom'
 import Aboutproduct from './components/Aboutproduct'
-import Pannel from './components/pannel'
+import Pannel from './components/Pannel'
 function App() {
 
 

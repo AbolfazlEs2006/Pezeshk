@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Allproduct from './Allproduct'
 import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStoreOutlined';
 import './Product.css'
-import Product from './productCard';
+import Product from './ProductCard';
 
 export default function Mainproduct() {
   return (

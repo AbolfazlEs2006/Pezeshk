@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar,Nav , Container } from 'react-bootstrap'
 import './SubHeader.css'
-import Swiper from "./swiper"
+import Swiper from "./Swiper"
 
 
 export default function SubHeader() {

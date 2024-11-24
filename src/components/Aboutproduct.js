@@ -3,7 +3,7 @@ import Allproduct from './Allproduct'
 import { useParams } from 'react-router-dom'
 import Header from './Header'
 import { Container } from 'react-bootstrap'
-import Title from './title'
+import Title from './Title'
 import Footer from './Footer'
 
 export default function Aboutproduct() {

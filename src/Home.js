@@ -8,7 +8,7 @@ import Product from './components/Product'
 import Send from './components/Send'
 import Specifications from './components/Specifications'
 import Footer from './components/Footer'
-import Title from './components/title'
+import Title from './components/Title'
 import { Margin } from '@mui/icons-material'
 
 
