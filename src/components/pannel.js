@@ -1,7 +1,7 @@
 import React from 'react'
 import IsLogin from './Utils'
 
-export default function pannel() {
+export default function Pannel() {
     IsLogin('7')
   return (
     <>
