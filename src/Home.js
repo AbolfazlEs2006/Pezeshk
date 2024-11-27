@@ -6,7 +6,6 @@ import Services from './components/Services'
 import Doctor from './components/Doctor'
 import Product from './components/Product'
 import Send from './components/Send'
-import Specifications from './components/Specifications'
 import Footer from './components/Footer'
 import Title from './components/Title'
 
@@ -24,8 +23,6 @@ export default function Home() {
     <Title title='محصولات ما' link='product'/>
     <Product />
     <Send />
-    <Title title='روش های کار پزشکیار' />
-    <Specifications />
     <Footer />
     </>
   )

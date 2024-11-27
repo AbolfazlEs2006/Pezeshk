@@ -1,6 +1,4 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from 'react'
 import { Button, Container } from "react-bootstrap";
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
 
