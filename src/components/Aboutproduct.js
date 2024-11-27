@@ -31,6 +31,10 @@ export default function Aboutproduct() {
     }
   }
 
+  function AddproductHandeler () {
+
+  }
+
   return (
     <>
     <Header />
@@ -55,7 +59,7 @@ export default function Aboutproduct() {
               <h3>{count}</h3>
               <button onClick={minesCountHandeler}>-</button>
               <div>
-                <button>افزودن به سبد خرید</button>
+                <button onClick={() => AddproductHandeler()}>افزودن به سبد خرید</button>
               </div>
             </div>
           </div>

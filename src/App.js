@@ -8,6 +8,7 @@ import Pannel from './components/Pannel'
 import Loggin from './components/Loggin'
 import Signup from './components/Signup'
 import Dashboard from './Dashboard'
+import Addproduct from './components/Addproduct'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/Loggin' element={<Loggin />} />
       <Route path='/signup' element={<Signup />} />
       <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/basket' element={<Dashboard />} />
 
     </Routes>
     </>

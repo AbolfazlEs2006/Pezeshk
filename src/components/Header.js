@@ -5,6 +5,7 @@ import CottageOutlinedIcon from '@mui/icons-material/CottageOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import ProductionQuantityLimitsOutlinedIcon from '@mui/icons-material/ProductionQuantityLimitsOutlined';
 import { Link } from 'react-router-dom';
+import Addproduct from './Addproduct'
 
 export default function Header() {
   return (
@@ -26,7 +27,7 @@ export default function Header() {
         <Link to='/Myaccount'>
           <button className='btn-person'><i><PersonOutlineOutlinedIcon /></i></button>
         </Link>
-        <button className='btn-add-product'><i><ProductionQuantityLimitsOutlinedIcon /></i></button>
+        <Addproduct />
             </div>
       </Container>
     </Navbar>
