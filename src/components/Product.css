@@ -54,6 +54,7 @@
     }
     .des-product {
         display: flex;
+        flex-direction: column-reverse;
         border: 1px solid rgb(216, 216, 216);
         padding: 3rem;
         margin-top: 3rem;
@@ -99,9 +100,10 @@
         justify-content: center;
         align-items: center;
         width: 90%;
+        margin-bottom: 1rem;
     }
     .about-product-img img{
-        width: 100%;
+        width: 50%;
         border-radius: 10px;
     }
     .product-price {
@@ -181,5 +183,11 @@
 @media screen and (min-width: 990px) {
     .Product-swip {
         width: 25% !important;
+    }
+    .des-product {
+        flex-direction: row;
+    }
+    .about-product-img img {
+        width: 90%;
     }
 }
