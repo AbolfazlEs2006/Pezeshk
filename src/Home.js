@@ -7,7 +7,7 @@ import Doctor from './components/Doctor'
 import Product from './components/Product'
 import Send from './components/Send'
 import Footer from './components/Footer'
-import Title from './components/Title'
+import Titleline from './components/Titleline'
 
 
 export default function Home() {
@@ -16,11 +16,11 @@ export default function Home() {
     <Header />
     <SubHeader />
     <Main />
-    <Title title='خدمات پزشکیار'/>
+    <Titleline title='خدمات پزشکیار'/>
     <Services />
-    <Title title='متخصصین پزشکیار' />
+    <Titleline title='متخصصین پزشکیار' />
     <Doctor />
-    <Title title='محصولات ما' link='product'/>
+    <Titleline title='محصولات ما' link='product'/>
     <Product />
     <Send />
     <Footer />

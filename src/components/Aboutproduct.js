@@ -3,7 +3,7 @@ import Allproduct from './Allproduct'
 import { useParams } from 'react-router-dom'
 import Header from './Header'
 import { Container } from 'react-bootstrap'
-import Title from './Title'
+import Titleline from './Titleline'
 import Footer from './Footer'
 
 export default function Aboutproduct() {
@@ -70,7 +70,7 @@ export default function Aboutproduct() {
         </div>
       </div>
     </Container>
-    <Title title='دیدگاه شما' />
+    <Titleline title='دیدگاه شما' />
     <Container>
       <div className='pointview'>
         <h5>نشانی ایمیل شما منتشر نخواهد شد. بخش های مورد نیاز علامت گذاری شده است*</h5>
