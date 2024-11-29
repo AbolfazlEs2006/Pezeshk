@@ -39,7 +39,9 @@ export default function Aboutproduct() {
 
   return (
     <>
-    <Header />
+    <Header>
+      <Basket />
+    </Header>
     <Container>
       <div className='des-product'>
         <div>
@@ -84,7 +86,6 @@ export default function Aboutproduct() {
       </div>
     </Container>
     <Footer />
-    <Basket mystate={count} />
     </>
   )
 }

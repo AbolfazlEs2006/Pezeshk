@@ -6,7 +6,7 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import { Link } from 'react-router-dom';
 import Basket from './Basket'
 
-export default function Header() {
+export default function Header({children}) {
   return (
     <>
     <Navbar expand="lg">
@@ -26,7 +26,7 @@ export default function Header() {
         <Link to='/Myaccount'>
           <button className='btn-person'><i><PersonOutlineOutlinedIcon /></i></button>
         </Link>
-        <Basket />
+        {children}
             </div>
       </Container>
     </Navbar>

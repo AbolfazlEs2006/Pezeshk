@@ -7,7 +7,6 @@ export default function Signup() {
     const [username , setUsername] = useState('')
     const [phoneNum , setPhoneNum] = useState('')
     const [password , setPassword] = useState('')
-    const [login, setLogin] = useState(false)
 
     function firstNameValue (event) {
         setUsername(() => event.target.value)
@@ -36,11 +35,6 @@ export default function Signup() {
                 setUsername('')
                 setPhoneNum('')
                 setPassword('')
-                setLogin(true)
-                if(login) {
-                    <Navigate to={'/'} />
-                }
-
             })
             .catch(err => {
                 setPassword('')

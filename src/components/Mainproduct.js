@@ -3,13 +3,15 @@ import Header from './Header'
 import './Product.css'
 import Allproduct from './Allproduct'
 import { Link } from 'react-router-dom'
-
+import Basket from './Basket'
 
 
 export default function Mainproduct() {
   return (
     <>
-        <Header />
+        <Header>
+          <Basket />
+        </Header>
         <div className='Allproduct-card'>
         {Allproduct.map(product => (
           <Link to={`/product/${product.id}`}>
