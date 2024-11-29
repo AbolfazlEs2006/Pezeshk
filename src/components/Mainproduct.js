@@ -4,6 +4,8 @@ import './Product.css'
 import Allproduct from './Allproduct'
 import { Link } from 'react-router-dom'
 
+
+
 export default function Mainproduct() {
   return (
     <>
@@ -11,7 +13,7 @@ export default function Mainproduct() {
         <div className='Allproduct-card'>
         {Allproduct.map(product => (
           <Link to={`/product/${product.id}`}>
-                    <div>
+                    <div key={product.id}>
                         <div>
                                 <img src={product.imgg} alt={product.title}/>
                             <div>
@@ -25,7 +27,7 @@ export default function Mainproduct() {
                             <h4>{product.price}</h4>
                         </div>
                     </div>
-                    </Link>
+          </Link>
         ))}
         </div>
     </>

@@ -9,13 +9,14 @@ import Footer from './Footer'
 export default function Aboutproduct() {
 
   const [count, setCount] = useState(1)
+  const [basket, setBasket] = useState([{}])
+
 
   let params = useParams()  
 
   let mainproduct = Allproduct.filter(product => {
     return product.id === params.productID
   })
-
 
   function plucCountHandeler () {
     setCount(prev => {
@@ -26,13 +27,13 @@ export default function Aboutproduct() {
     setCount(prev => {
       return prev - 1
     })
-    if (count <= 0) {
-      setCount(0)
+    if (count <= 1) {
+      setCount(1)
     }
   }
 
-  function AddproductHandeler () {
-
+  function productHandeler () {
+    setBasket(mainproduct)
   }
 
   return (
@@ -59,7 +60,7 @@ export default function Aboutproduct() {
               <h3>{count}</h3>
               <button onClick={minesCountHandeler}>-</button>
               <div>
-                <button onClick={() => AddproductHandeler()}>افزودن به سبد خرید</button>
+                <button onClick={() => productHandeler()}>افزودن به سبد خرید</button>
               </div>
             </div>
           </div>
