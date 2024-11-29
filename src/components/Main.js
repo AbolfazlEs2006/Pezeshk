@@ -2,9 +2,7 @@ import React from 'react'
 import { Button, Container } from "react-bootstrap";
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
 
-// Import Swiper styles
-import "swiper/css";
-import 'swiper/css/bundle';
+
 import './main.css'
 
 export default function Main() {
