@@ -5,11 +5,12 @@ import Header from './Header'
 import { Container } from 'react-bootstrap'
 import Titleline from './Titleline'
 import Footer from './Footer'
+import Basket from './Basket'
 
 export default function Aboutproduct() {
 
   const [count, setCount] = useState(1)
-  const [basket, setBasket] = useState([{}])
+  const [basket, setBasket] = useState([])
 
 
   let params = useParams()  
@@ -83,6 +84,7 @@ export default function Aboutproduct() {
       </div>
     </Container>
     <Footer />
+    <Basket mystate={count} />
     </>
   )
 }
