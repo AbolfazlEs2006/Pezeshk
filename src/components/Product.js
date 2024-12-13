@@ -1,10 +1,11 @@
 import React from 'react'
-import ProductCard from './ProductCard'
+import Cardproduct from './Cardproduct'
 
 export default function Product() {
   return (
     <div className='product-dis'>
-    <ProductCard />
+    <Cardproduct />
     </div>
   )
 }
+
