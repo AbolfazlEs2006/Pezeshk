@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 import { Pagination } from 'swiper/modules';
 import './Product.css'
 
-export default function Product() {
+export default function ProductCard () {
   return (
     <>
         <Container>
