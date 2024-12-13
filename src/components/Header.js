@@ -4,7 +4,6 @@ import './Header.css'
 import CottageOutlinedIcon from '@mui/icons-material/CottageOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import { Link } from 'react-router-dom';
-import Basket from './Basket'
 
 export default function Header({children}) {
   return (

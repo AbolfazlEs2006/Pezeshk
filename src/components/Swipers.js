@@ -12,7 +12,7 @@ import './styles.css';
 // import required modules
 import { Pagination } from 'swiper/modules';
 
-export default function Swipers() {
+export default function Swipers () {
   return (
     <>
     <Container className='sw-container'>
