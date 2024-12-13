@@ -11,6 +11,9 @@ import Titleline from './components/Titleline'
 
 
 export default function Home() {
+
+  document.title = 'Home'
+
   return (
     <>
     <Header />
