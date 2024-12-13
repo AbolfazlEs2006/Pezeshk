@@ -1,7 +1,7 @@
 import React from 'react'
 import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 
-export default function cardDoctor(props) {
+export default function CardDoctor (props) {
   return (
     <>
         <div className='card-doctor'>
