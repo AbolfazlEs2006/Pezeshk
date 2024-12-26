@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import { Navigate } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 
 export default function Signup() {
     const [username , setUsername] = useState('')

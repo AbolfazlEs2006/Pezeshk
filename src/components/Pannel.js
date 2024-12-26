@@ -1,11 +1,12 @@
 import React from 'react'
-import { Navigate } from 'react-router-dom'
-
+import Islogin from './Islogin'
 
 export default function Pannel() {
+
+
   return (
-    <>
-        <Navigate to={'/Loggin'} />
-    </>
+   <>
+   <Islogin />
+   </>
   )
 }

@@ -16,9 +16,7 @@ export default function Basket ({mystate}) {
     return product.id === params.productID
   })
   
-  function showBasket () {
-    setBasket(!basket)
-  }
+  function showBasket () {setBasket(!basket)}
 
   return (
     <>
