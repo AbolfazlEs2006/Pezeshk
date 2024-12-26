@@ -29,7 +29,6 @@
     .add-product {
         display: flex;
         justify-content: space-between;
-        margin-top: 3rem;
         padding: 0 0.5rem;
     }
     .Product-swip div div img {
@@ -172,12 +171,51 @@
     }
     .Allproduct-card {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .Allproduct-card a {
         border: 1px solid gainsboro;
         margin: 1rem;
         border-radius: 10px;
+    }
+    .dis-products {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .products-img {
+        display: flex;
+        align-items: center;
+        padding: 0.7rem;
+        transition-duration: 0.5s;
+    }
+    .products-img:hover {
+        background-color: rgb(233, 233, 233);
+    }
+    .products-img img{
+        width: 25%;
+    }
+
+    .about-products {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .about-products h1{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: black;
+    }
+    .about-products p {
+        font-size: 0.8rem;
+        color: gray;
+    }
+    .about-products h5 {
+        font-size: 0.8rem;
+        color: rgb(239, 47, 47);
+    }
+    .price-products {
+        display: flex;
+        justify-content: end;
+        color: rgb(85, 85, 85);
     }
 }
 @media screen and (min-width: 990px) {
@@ -189,5 +227,13 @@
     }
     .about-product-img img {
         width: 90%;
+    }
+    .Allproduct-card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1028px) {
+    .Allproduct-card {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

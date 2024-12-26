@@ -16,20 +16,21 @@ export default function Mainproduct() {
         </Header>
         <div className='Allproduct-card'>
         {Allproduct.map(product => (
-          <Link to={`/product/${product.id}`}>
+          <Link to={`/product/${product.id}`} style={{textDecoration: 'none'}}>
                     <div key={product.id}>
-                        <div>
-                                <img src={product.imgg} alt={product.title}/>
-                            <div>
+                      <div className='dis-products'>
+                        <div className='products-img'>
+                            <img src={product.imgg} alt={product.title}/>
+                            <div className='about-products'>
                                 <h1>{product.title}</h1>
-                                <p>{product.des}</p>
+                                <p>دسته: {product.des}</p>
+                                <h5>تنها {product.count} در انبار باقی مانده است</h5>
+                                <div className='price-products'>
+                                  <h4>{product.price}</h4>
+                                </div>
                             </div>
                         </div>
-                        <div className='add-product'>
-                        <button>
-                            </button>
-                            <h4>{product.price}</h4>
-                        </div>
+                      </div>
                     </div>
           </Link>
         ))}
