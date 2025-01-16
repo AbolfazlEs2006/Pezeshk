@@ -6,6 +6,7 @@ import { Container } from 'react-bootstrap'
 import Titleline from './Titleline'
 import Footer from './Footer'
 import Basket from './Basket'
+import Swal from 'sweetalert2'
 
 export default function Aboutproduct() {
   document.title = 'Products'
@@ -37,6 +38,13 @@ export default function Aboutproduct() {
 
   function productHandeler () {
     setBasket(mainproduct)
+    Swal.fire({
+      position: "top-start",
+      icon: "success",
+      title: `محصول ${mainproduct[0].des} با موفقیت اضافه شد.`,
+      showConfirmButton: false,
+      timer: 1500
+    });
   }
 
   return (
