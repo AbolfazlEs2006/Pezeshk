@@ -41,10 +41,11 @@ export default function Aboutproduct() {
     Swal.fire({
       position: "top-start",
       icon: "success",
-      title: `محصول ${mainproduct[0].des} با موفقیت اضافه شد.`,
+      title: `محصول ${mainproduct[0].title} با موفقیت اضافه شد.`,
       showConfirmButton: false,
       timer: 1500
     });
+    
   }
 
   return (
