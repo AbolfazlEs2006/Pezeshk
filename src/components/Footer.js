@@ -41,12 +41,12 @@ export default function Footer() {
                 </p>
                 </div>
                 <div>
-                  <img src='./img/mark-logo-1.png' />
-                  <img src='./img/mark-logo-2.png' />
-                  <img src='./img/mark-logo-3.png' />
-                  <img src='./img/mark-logo-1.png' />
-                  <img src='./img/mark-logo-2.png' />
-                  <img src='./img/mark-logo-3.png' />
+                  <img src='/img/mark-logo-1.png' />
+                  <img src='/img/mark-logo-2.png' />
+                  <img src='/img/mark-logo-3.png' />
+                  <img src='/img/mark-logo-1.png' />
+                  <img src='/img/mark-logo-2.png' />
+                  <img src='/img/mark-logo-3.png' />
                 </div>
               </div>
               <div className='end-footer'>
